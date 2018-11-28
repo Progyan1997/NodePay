@@ -10,5 +10,12 @@ const User = database.define("User", {
     bank:     { type: Sequelize.STRING, allowNull: false },
     ac_no:    { type: Sequelize.STRING, allowNull: false },
     upi:      { type: Sequelize.STRING, unique: true },
-    balance:  { type: Sequelize.NUMBER, allowNull: false, defaultValue: 0 }
+    balance:  {
+        type: Sequelize.NUMBER,
+        allowNull: false,
+        defaultValue: 0,
+        validate: {
+            isInt: true
+        }
+    }
 });
