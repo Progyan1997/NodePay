@@ -5,11 +5,9 @@ const express     = require("express"),
       bodyParser  = require("body-parser"),
       morgan      = require("morgan"),
       path        = require("path"),
-      serveStatic = require("serve-static");
-
-/** Get Environment Variables */
-const host = process.env.NODEJS_HOST || "127.0.0.1",
-      port = process.env.NODEJS_PORT || "8080"
+      serveStatic = require("serve-static"),
+      config      = require("./Configs/appconfig"),
+      routes      = require("./Routes");
 
 /** Instantiate an Express Application */
 const app = express();
@@ -23,11 +21,9 @@ app.set("view engine", "pug");
 app.set("views", "Views");
 
 /** Define Route Paths and Parameters */
-app.get("/", function (req, res) {
-    res.render("index", { title: "Hey", message: "Hello there!" });
-});
+app.get("/", routes.index);
 
 /** Start The Server */
-app.listen(port, function () {
-    console.log(`App is started on ${host}:${port}`);
+app.listen(config, function () {
+    console.log(`App is started on ${config.host}\nListening on ${config.port}`);
 })
