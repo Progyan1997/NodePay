@@ -1,31 +1,26 @@
 /** Import CommonJS Module */
-const Sequelize = require("sequelize"), 
-      database  = require("../Configs/dbconfig");
+const db = require("../Configs/dbconfig");
 
 /** Define Data Model: Transaction */
-const Transaction = database.define("Transaction", {
+module.exports = db.define("transaction", {
     trans_id: {
-        type: Sequelize.STRING,
+        type: db.Sequelize.STRING,
         primaryKey: true,
-        defaultValue: Sequelize.UUIDV4,
-        validate: {
-            isUUID: true
-        }
+        defaultValue: db.Sequelize.UUIDV4
     },
-    sender_id:   { type: Sequelize.STRING, allowNull: false },
-    reciever_id: { type: Sequelize.STRING, allowNull: false },
+    sender_id:   { type: db.Sequelize.STRING, allowNull: false },
+    reciever_id: { type: db.Sequelize.STRING, allowNull: false },
     amount: {
-        type: Sequelize.NUMBER,
+        type: db.Sequelize.INTEGER,
         allowNull: false,
-        defaultValue: 0,
         validate: {
             isInt: true
         }
     },
     timestamp: {
-        type: Sequelize.DATE,
+        type: db.Sequelize.DATE,
         allowNull: false,
-        defaultValue: Sequelize.NOW,
+        defaultValue: db.Sequelize.NOW,
         validate: {
             isDate: true
         }

@@ -1,6 +1,4 @@
-/** Entry Point of The Application */
-
-/** Import CommonJS Modules */
+/** Import CommonJS Modules and Router */
 const express     = require("express"),
       bodyParser  = require("body-parser"),
       morgan      = require("morgan"),
@@ -26,4 +24,4 @@ app.get("/", routes.index);
 /** Start The Server */
 app.listen(config, function () {
     console.log(`App is started on ${config.host}\nListening on ${config.port}`);
-})
+});
