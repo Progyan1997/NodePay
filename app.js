@@ -11,8 +11,8 @@ const express     = require("express"),
 const app = express();
 
 /** Inject Middlewares to Application */
+app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-// app.use(bodyParser.json());
 app.use(morgan("tiny"));
 app.use(serveStatic(path.join(__dirname, "Static")));
 app.set("view engine", "pug");
@@ -20,6 +20,7 @@ app.set("views", "Views");
 
 /** Define Route Paths and Parameters */
 app.get("/", routes.index);
+app.post("/login", routes.login);
 
 /** Start The Server */
 app.listen(config, function () {

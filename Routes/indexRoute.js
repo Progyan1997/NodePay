@@ -1,4 +1,4 @@
 /** Index Route Handler */
-module.exports = function (req, res) {
+module.exports = function (_, res) {
     res.render("index", { title: "Hey", message: "Hello there!" });
-}
+};

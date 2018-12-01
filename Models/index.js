@@ -26,7 +26,7 @@ module.exports = {
                 attributes: [ "user_id" ],
                 where: { user_id, password }
             });
-            return user.getDataValue("user_id");
+            return user.get();
         } catch (e) {
             console.error(e);
             return null;
@@ -59,7 +59,7 @@ module.exports = {
                 },
                 order: [[ "timestamp", "DESC" ]],
                 offset,
-                limit: 10
+                limit: 5
             });
             return trans;
         } catch (e) {
