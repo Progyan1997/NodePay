@@ -1,0 +1,15 @@
+form(accept-charset="UTF-8" role="form")
+    fieldset
+        div(class="form-group")
+            input(class="form-control" placeholder="Username" name="username" type="text" required)
+        div(class="form-group")
+            input(class="form-control" placeholder="Password" name="password" type="password" required)
+        div(class="form-group checkbox")
+            label
+                input(name="remember" type="checkbox" value="Remember Me")
+                |
+                | Remember Me
+        button(class="btn btn-md btn-success btn-block" type="submit" name="login")
+            | Login
+        a(href="register.html" class="btn btn-md btn-default btn-block" role="button")
+            | Don't have an account? Create One

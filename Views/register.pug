@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+html(lang="en")
+  include layout/head.pug
+  body
+    include layout/navbar.pug
+    main
+      include layout/banner.pug
+      div(class="container")
+        div(class="row")
+          div(class="col-8 offset-2")    
+            div(class="card")
+              div(class="card-body")
+                h5(class="card-title")
+                 | Create New Account
+                div(class="panel-body")
+                  include forms/register.pug
+    include layout/footer.pug
+    include layout/scripts.pug 
