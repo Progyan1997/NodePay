@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 html(lang="en")
-  include head.pug
+  include layout/head.pug
   body
-    h1= message
-    include scripts.pug 
+    include layout/navbar.pug
+    main
+      include layout/banner.pug
+      div(class="container")
+        div(class="row")
+          div(class="col-6 offset-3")    
+            div(class="card")
+              div(class="card-body")
+                h5(class="card-title")
+                 | Login
+                div(class="panel-body")
+                  include forms/login.pug
+    include layout/footer.pug
+    include layout/scripts.pug 

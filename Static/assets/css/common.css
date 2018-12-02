@@ -1,0 +1,19 @@
+header nav {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.navbar-brand {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    color: #0057e7 !important;
+}
+
+footer {
+    background-color: #f8f9fa !important;
+    margin-top: 20px;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+}

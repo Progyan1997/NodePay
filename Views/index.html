@@ -5,45 +5,52 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
-    <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-            <img src="0.png" width="80" height="80" class="d-inline-block panel-default" alt="NodePay">
-            &nbsp;Node Pay
-        </a>
-    </nav>
+    <header>
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="0.png" width="80" height="80" class="d-inline-block panel-default" alt="NodePay">
+                &nbsp;Node Pay
+            </a>
+        </nav>
+    </header>
     <main>
-        <header></header>
-        <div class="container-fluid">
+        <div class="jumbotron">
             <img src="pay.jpg" width="1400" , height="200" class="img-fluid" alt="Responsive image">
         </div>
-        <div class="card-group">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Login</h5>
-                    <div class="panel-body">
-                        <form accept-charset="UTF-8" role="form">
-                            <fieldset>
-                                <div class="form-group">
-                                    <input class="form-control" placeholder="E-mail" name="email" type="text">
-                                </div>
-                                <div class="form-group">
-                                    <input class="form-control" placeholder="Password" name="password" type="password" value="">
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input name="remember" type="checkbox" value="Remember Me"> Remember Me
-                                    </label>
-                                </div>
-                                <input class="btn btn-lg btn-success btn-block" type="submit" value="Login">
-                                <a href="register.html" class="btn btn-lg btn-success btn-block" role="button">Register</a>
-                            </fieldset>
-                        </form>
+        <div class="container">
+            <div class="row">
+                <div class="col-6 offset-3">    
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Login</h5>
+                            <div class="panel-body">
+                                <form accept-charset="UTF-8" role="form">
+                                    <fieldset>
+                                        <div class="form-group">
+                                            <input class="form-control" placeholder="Username" name="username" type="text">
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control" placeholder="Password" name="password" type="password">
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input name="remember" type="checkbox" value="Remember Me"> Remember Me
+                                            </label>
+                                        </div>
+                                        <input class="btn btn-md btn-success btn-block" type="submit" value="Login">
+                                        <a href="register.html" class="btn btn-md btn-default btn-block" role="button">
+                                            Don't have an account? Create One
+                                        </a>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-            <footer>
-                   &copy; Copyright 2018
-                </footer>
-</main>
+    </main>
+    <footer>
+        &copy; Copyright 2018
+    </footer>
 </body>
