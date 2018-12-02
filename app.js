@@ -35,6 +35,7 @@ app.get("/register", routes.register);
 app.get("/dashboard", routes.dashboard);
 
 app.post("/login", routes.login);
+app.post("/register", routes.register);
 
 /** Start The Server */
 app.listen(config, function () {

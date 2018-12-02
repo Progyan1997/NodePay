@@ -12,7 +12,7 @@ module.exports = function (req, res) {
             if (user === null) {
                 res.sendStatus(403);
             } else {
-                res.send(user);
+                res.redirect("/dashboard?username=" + username);
             }
         });
 };
