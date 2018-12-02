@@ -11,3 +11,99 @@
             &nbsp;Node Pay
         </a>
     </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6 offset-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="card-title">Personal Information</h1>
+                        <div class="media">
+                            <img class="mr-3" src="man.jpg" width="48" height="48" alt="Profile Photo">
+                            <div class="media-body">
+                                <h5 class="mt-0">Name:</h5> bvgg
+                                <h5 class="mt-0">Bank:</h5> bnaj
+                                <h5 class="mt-0">Account Number:</h5> bnaj
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" row">
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="card-title">Pay</h1>
+                        <div class="panel-body">
+                            <form accept-charset="UTF-8" role="form">
+                                <fieldset>
+                                    <div class="form-group">
+                                        <input class="form-control" placeholder="Reciever ID" name="reciever" type="text">
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" placeholder="Amount" name="amount" type="number" min="10">
+                                    </div>
+                                    <input class="btn btn-lg btn-success btn-block" type="button" value="Pay">
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="card-title">Check Balance</h1>
+                        <div class="panel-body">
+                            <form accept-charset="UTF-8" role="form">
+                                <fieldset>
+                                    <input class="btn btn-md btn-primary btn-block" type="button" value="Check">
+                                    <div class="form-group">
+                                        <input class="form-control" placeholder="Amount" name="amount" type="number" readonly>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="card-title">Transactions</h1>
+                        <div class="panel-body">
+                            <input class="btn btn-md btn-secondary btn-block" type="button" value="Fetch">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">
+                                            Sender
+                                        </th>
+                                        <th scope="col">
+                                            Reciever
+                                        </th>
+                                        <th scope="col">
+                                            Amount
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            A
+                                        </td>
+                                        <td>
+                                            B
+                                        </td>
+                                        <td>
+                                            0
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
