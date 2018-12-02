@@ -31,6 +31,8 @@ app.locals.pretty = true;
 
 /** Define Route Paths and Parameters */
 app.get("/", routes.index);
+app.get("/register", routes.register);
+
 app.post("/login", routes.login);
 
 /** Start The Server */
