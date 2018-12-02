@@ -1,9 +1,9 @@
-form(accept-charset="UTF-8" role="form")
+form(method="POST" accept-charset="UTF-8" role="form")
     fieldset
-        input(class="form-control" name="sender" type="hidden" value=sender)
+        input(class="form-control" name="username" type="hidden" value=sender)
         div(class="form-group")
             input(class="form-control" placeholder="Reciever ID" name="reciever" type="text")
         div(class="form-group")
             input(class="form-control" placeholder="Amount" name="amount" type="number" min="10")
-        button(class="btn btn-lg btn-success btn-block" type="button" name="pay")
+        button(class="btn btn-lg btn-success btn-block" type="submit" name="pay")
             | Pay
