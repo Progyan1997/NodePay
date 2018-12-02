@@ -32,6 +32,7 @@ app.locals.pretty = true;
 /** Define Route Paths and Parameters */
 app.get("/", routes.index);
 app.get("/register", routes.register);
+app.get("/dashboard", routes.dashboard);
 
 app.post("/login", routes.login);
 

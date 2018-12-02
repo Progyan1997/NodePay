@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+html(lang="en")
+    include layout/head.pug
+    link(href="/assets/css/dashboard.css" rel="stylesheet")
+    body
+        include layout/navbar.pug
+        main
+            div(class="container-fluid")
+                div(class="row")
+                    div(class="col-6 offset-3")    
+                        include layout/personal.pug
+                div(class="row")
+                    div(class="col-4")
+                        include layout/paycard.pug
+                    div(class="col-4")
+                        include layout/balancecard.pug
+                    div(class="col-4")
+                        include layout/transaction.pug
+            div
+        include layout/footer.pug
+        include layout/scripts.pug 

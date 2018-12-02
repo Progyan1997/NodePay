@@ -1,0 +1,20 @@
+div(class="card")
+    div(class="card-body")
+        h1(class="card-title")
+            | Transactions
+        div(class="panel-body")
+            input(class="btn btn-md btn-secondary btn-block" type="button" value="Fetch")
+            table(class="table table-striped")
+                thead
+                    tr
+                        th(scope="col")
+                            | Sender
+                        th(scope="col")
+                            | Reciever
+                        th(scope="col")
+                            | Amount
+                tbody
+                    tr
+                        td= sender
+                        td= reciever
+                        td= amount
