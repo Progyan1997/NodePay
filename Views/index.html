@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -7,30 +7,60 @@
 <body>
     <nav class="navbar navbar-light bg-light">
         <a class="navbar-brand" href="#">
-            <img src="0.png" width="30" height="30" class="d-inline-block align-top" alt="NodePay">
+            <img src="0.png" width="80" height="80" class="d-inline-block panel-default" alt="NodePay">
             &nbsp;Node Pay
         </a>
     </nav>
     <main>
         <header></header>
-        <section class="container">
-            <nav class="nav nav-fill">
-                <ul class="nav" style="width: 100%">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#login">LOGIN</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#signup">SIGNUP</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="tab-content">
-                <div class="tab-pane active" id="login" role="tabpanel" aria-labelledby="home-tab">...</div>
-                <div class="tab-pane" id="signup" role="tabpanel" aria-labelledby="profile-tab">...</div>
+        <div class="container-fluid">
+            <img src="pay.jpg" width="1400" , height="200" class="img-fluid" alt="Responsive image">
+        </div>
+        <div class="card-group">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Login</h5>
+                    <div class="panel-body">
+                        <form accept-charset="UTF-8" role="form">
+                            <fieldset>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="E-mail" name="email" type="text">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Password" name="password" type="password" value="">
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input name="remember" type="checkbox" value="Remember Me"> Remember Me
+                                    </label>
+                                </div>
+                                <input class="btn btn-lg btn-success btn-block" type="submit" value="Login">
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
             </div>
-        </section>
-        <footer>
-            &copy; Copyright 2018
-        </footer>
-    </main>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Signup</h5>
+                    <div class="panel-body">
+                        <form accept-charset="UTF-8" role="form">
+                            <fieldset>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="E-mail" name="email" type="text">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Password" name="password" type="password" value="">
+                                </div>
+                                <input class="btn btn-lg btn-success btn-block" type="submit" value="Signup">
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <footer>
+                   &copy; Copyright 2018
+                </footer>
+</main>
 </body>
