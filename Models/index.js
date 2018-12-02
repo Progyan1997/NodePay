@@ -26,11 +26,12 @@ module.exports = {
                 attributes: [ "user_id" ],
                 where: { user_id, password }
             });
-            return user.get();
+            if (user)
+                return user.get();
         } catch (e) {
             console.error(e);
-            return null;
         }
+        return null;
     },
     getUser: async function ({ user_id }) {
         try {
@@ -39,11 +40,12 @@ module.exports = {
                 attributes: [ "user_id", "name", "bank", "ac_no", "balance" ],
                 where: { user_id }
             });
-            return user.get();
+            if (user)
+                return user.get();
         } catch (e) {
             console.error(e);
-            return null;
         }
+        return null;
     },
     getTransaction: async function ({ user_id, offset }) {
         if (typeof offset !== "number")

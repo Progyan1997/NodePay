@@ -2,7 +2,7 @@
 const express      = require("express"),
       bodyParser   = require("body-parser"),
       cookieParser = require("cookie-parser"),
-      csrf         = require("csurf"),
+      // csrf         = require("csurf"),
       errorHandler = require("errorhandler"),
       helmet       = require("helmet"),
       morgan       = require("morgan"),
@@ -18,7 +18,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(csrf({ cookie: true }));
+// app.use(csrf({ cookie: true }));
 app.use(errorHandler());
 app.use(helmet());
 app.use(morgan("tiny"));

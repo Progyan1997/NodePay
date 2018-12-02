@@ -1,5 +1,6 @@
-form(accept-charset="UTF-8" role="form")
+form(action= loginURL method="POST" name="loginForm" accept-charset="UTF-8" role="form")
     fieldset
+        // input(type="hidden" value= csrfToken readonly)
         div(class="form-group")
             input(class="form-control" placeholder="Username" name="username" type="text" required)
         div(class="form-group")
@@ -11,5 +12,5 @@ form(accept-charset="UTF-8" role="form")
                 | Remember Me
         button(class="btn btn-md btn-success btn-block" type="submit" name="login")
             | Login
-        a(href="register.html" class="btn btn-md btn-default btn-block" role="button")
+        a(href= registerURL class="btn btn-md btn-default btn-block" role="button")
             | Don't have an account? Create One
